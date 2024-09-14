@@ -1,0 +1,88 @@
+{
+	"pizzas": [
+		{
+			"size": "Small",
+			"price": 5.00
+		},
+		{
+			"size": "Medium",
+			"price": 7.00
+		},
+		{
+			"size": "Large",
+			"price": 8.00
+		},
+		{
+			"size": "Extra Large",
+			"price": 9.00
+		}
+	]
+	"toppings" : [
+		{
+			"type": "Veggie",
+			"name": "Tomatoes"
+			"price": 1.00
+		},
+		{
+			"type": "Veggie",
+			"name": "Onions"
+			"price": 0.50
+		},
+		{
+			"type": "Veggie",
+			"name": "Bell pepper"
+			"price": 1.00
+		},
+		{
+			"type": "Veggie",
+			"name": "Mushrooms"
+			"price": 1.20
+		},
+		{
+			"type": "Veggie",
+			"name": "Pineapple"
+			"price": 0.75
+		},
+		{
+			"type": "Non-Veggie",
+			"name": "Sausage"
+			"price": 1.00
+		},
+		{
+			"type": "Non-Veggie",
+			"name": "Pepperoni"
+			"price": 2.00
+		},
+		{
+			"type": "Non-Veggie",
+			"name": "Barbecue Chicken"
+			"price": 3.00
+		}		
+	]
+	"offers": [
+		{
+			"description": "1 Medium Pizza with 2 topping",
+			"size": "Medium",
+			"toppings": 2,
+			"price": 5,
+			"discountType": "amount",
+			"discount": 0
+		},
+		{
+			"description": "2 Medium Pizza with 4 topping each",
+			"size": "Medium",
+			"toppings": 4,
+			"price": 9,
+			"discountType": "amount",
+			"discount": 0
+		},
+		{
+			"description": "1 Large Pizza with 4 topping(Pepperoni and Barbecue Chicken are counted as 2 toppings)",
+			"size": "Large",
+			"toppings": 4,
+			"price": 9,
+			"discountType": "percent",
+			"discount": 50
+		}
+	]
+}
