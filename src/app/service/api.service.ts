@@ -1,8 +1,10 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { map } from 'rxjs';
+
 import { Pizza } from '../interfaces/pizza';
 import { Topping } from '../Interfaces/topping';
-import { filter, map } from 'rxjs';
+import { Offer } from '../Interfaces/offer';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +15,7 @@ export class ApiService {
     private http: HttpClient
   ) { }
 
-  public getAllPizza() {
+  public getAllPizzas() {
     return this.http.get<Pizza[]>('/assets/pizzas.json')
     .pipe();
   }
@@ -41,4 +43,9 @@ export class ApiService {
           })
       );
   } 
+
+  public getAllOffers() {
+    return this.http.get<Offer[]>('/assets/offers.json')
+    .pipe();
+  }
 }

@@ -1,1 +1,10 @@
-<p>pizza-offer works!</p>
+<mat-grid-list cols="1" class="mat-grid-list">
+    <app-offer-list (updateOfferSelected)="onOfferSelected($event)"></app-offer-list>
+    <span class="label" *ngIf="selectedOffer && selectedOffer.pizza === 2">Pizza 1</span>
+    <app-topping-list #pizza1Toppings *ngIf="selectedOffer" (updateToppingsList)="onToppingSelected('pizza1', $event)"></app-topping-list>
+    <span class="label" *ngIf="selectedOffer && selectedOffer.pizza === 2">Pizza 2</span>
+    <app-topping-list #pizza2Toppings *ngIf="selectedOffer && selectedOffer.pizza === 2" (updateToppingsList)="onToppingSelected('pizza2', $event)"></app-topping-list>
+    <span class="order-total-span"><label class="order-total-label">Total: ${{ orderTotal | number: '1.1-2' }}</label></span>
+    <button *ngIf="orderTotal" mat-raised-button (click)="onAddToCart()">Add to Cart</button>
+</mat-grid-list>
+

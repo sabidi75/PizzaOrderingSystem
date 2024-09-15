@@ -1,0 +1,12 @@
+.label {
+  font-size: 15px;
+  font-weight: bold;
+}
+.order-total-span {
+    margin: 20px;
+}
+.order-total-label {
+    margin-left: 5px;
+    font-size: 15px;
+    font-weight: bold;   
+}

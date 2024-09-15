@@ -10,17 +10,18 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import { PizzaListComponent } from './pizza-list/pizza-list.component';
 import { PizzaOrderRoutingModule } from './pizza-order-routing.module';
 import { PizzaOrderComponent } from './pizza-order.component';
-import { ToppingListComponent } from './topping-list/topping-list.component';
+import { ToppingListComponent } from '../common/topping-list/topping-list.component';
+
 
 @NgModule({
   declarations: [
     PizzaListComponent,
     PizzaOrderComponent,
-    ToppingListComponent
   ],
   imports: [
     CommonModule,
     PizzaOrderRoutingModule,
+    ToppingListComponent,
 
     MatButtonModule,
     MatRadioModule, 

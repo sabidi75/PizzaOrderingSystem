@@ -1,4 +1,11 @@
 import { Component, EventEmitter, Output } from '@angular/core';
+
+import { CommonModule } from '@angular/common';
+
+import { MatButtonModule } from '@angular/material/button';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatGridListModule } from '@angular/material/grid-list';
+
 import { Topping } from '../../Interfaces/topping';
 import { ApiService } from '../../service/api.service';
 
@@ -6,6 +13,14 @@ import { ApiService } from '../../service/api.service';
   selector: 'app-topping-list',
   templateUrl: './topping-list.component.html',
   styleUrl: './topping-list.component.css',
+  standalone: true,
+  imports: [
+    CommonModule,
+    
+    MatButtonModule,
+    MatCheckboxModule,
+    MatGridListModule
+  ]
 })
 export class ToppingListComponent {
   public breakpoint: number = 1;

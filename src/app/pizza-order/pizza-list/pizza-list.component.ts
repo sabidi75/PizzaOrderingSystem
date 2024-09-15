@@ -22,7 +22,7 @@ export class PizzaListComponent implements OnInit {
 
   ngOnInit() {
     this.selectedPizza = undefined;
-    this.apiService.getAllPizza().subscribe(data => {
+    this.apiService.getAllPizzas().subscribe(data => {
       this.pizzas = data;
     });
   }

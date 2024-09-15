@@ -9,15 +9,20 @@ import {MatGridListModule} from '@angular/material/grid-list';
 
 import { PizzaOfferRoutingModule } from './pizza-offer-routing.module';
 import { PizzaOfferComponent } from './pizza-offer.component';
+import { OfferListComponent } from './offer-list/offer-list.component';
+import { ToppingListComponent } from '../common/topping-list/topping-list.component';
+
 
 @NgModule({
   declarations: [
     PizzaOfferComponent,
+    OfferListComponent,
   ],
   imports: [
     CommonModule,
     PizzaOfferRoutingModule,
-
+    ToppingListComponent,
+    
     MatButtonModule,
     MatRadioModule, 
     FormsModule,

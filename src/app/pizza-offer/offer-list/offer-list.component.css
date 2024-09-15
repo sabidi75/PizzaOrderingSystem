@@ -1,0 +1,25 @@
+.mat-grid-list {
+    margin: 20px;
+  }
+  
+  .label {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  .radio-group {
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0;
+    align-items: flex-start;
+  }
+  
+  .radio-button {
+    margin: 3px;
+  }
+  
+  .offer-price {
+    margin-left: 5px;
+    font-size: 15px;
+    font-weight: bold;
+  }
