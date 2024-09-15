@@ -17,19 +17,17 @@ export class PizzaOrderComponent {
   onPizzaSelected(pizza: Pizza) {
     this.selectedPizza = pizza;
     this.calculateOrderTotal();
-    console.log(this.selectedPizza);
   }
   onToppingSelected(toppings: Topping[]) {
     this.selectedToppings = toppings;
     this.calculateOrderTotal();
-    console.log(this.selectedToppings);
   }
 
   calculateOrderTotal() {
-    this.orderTotal = this.selectedPizza ? this.selectedPizza.price : 0;
     if (!this.selectedPizza) {
       return;
     }
+    this.orderTotal = this.selectedPizza ? this.selectedPizza.price : 0;
     this.selectedToppings.forEach((t) => {
       this.orderTotal += t.price;
     });
