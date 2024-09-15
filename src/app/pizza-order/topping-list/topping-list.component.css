@@ -1,0 +1,30 @@
+.mat-grid-list {
+  margin: 20px;
+}
+
+.mat-grid-tile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  align-content: flex-start;
+}
+
+.label {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.checkbox {
+  margin: 3px;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 4px;
+}
+
+.topping-price {
+  margin-left: 15px;
+  font-size: 15px;
+  font-weight: bold;
+}

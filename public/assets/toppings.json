@@ -1,0 +1,42 @@
+[
+	{
+		"type": "Veggie",
+		"name": "Tomatoes",
+		"price": 1.0
+	},
+	{
+		"type": "Veggie",
+		"name": "Onions",
+		"price": 0.5
+	},
+	{
+		"type": "Veggie",
+		"name": "Bell pepper",
+		"price": 1.0
+	},
+	{
+		"type": "Veggie",
+		"name": "Mushrooms",
+		"price": 1.2
+	},
+	{
+		"type": "Veggie",
+		"name": "Pineapple",
+		"price": 0.75
+	},
+	{
+		"type": "Non-Veggie",
+		"name": "Sausage",
+		"price": 1.0
+	},
+	{
+		"type": "Non-Veggie",
+		"name": "Pepperoni",
+		"price": 2.0
+	},
+	{
+		"type": "Non-Veggie",
+		"name": "Barbecue Chicken",
+		"price": 3.0
+	}
+]

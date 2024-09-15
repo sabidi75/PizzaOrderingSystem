@@ -2,63 +2,63 @@
 	"pizzas": [
 		{
 			"size": "Small",
-			"price": 5.00
+			"price": 5.0
 		},
 		{
 			"size": "Medium",
-			"price": 7.00
+			"price": 7.0
 		},
 		{
 			"size": "Large",
-			"price": 8.00
+			"price": 8.0
 		},
 		{
 			"size": "Extra Large",
-			"price": 9.00
+			"price": 9.0
 		}
-	]
-	"toppings" : [
+	],
+	"toppings": [
 		{
 			"type": "Veggie",
-			"name": "Tomatoes"
-			"price": 1.00
+			"name": "Tomatoes",
+			"price": 1.0
 		},
 		{
 			"type": "Veggie",
-			"name": "Onions"
-			"price": 0.50
+			"name": "Onions",
+			"price": 0.5
 		},
 		{
 			"type": "Veggie",
-			"name": "Bell pepper"
-			"price": 1.00
+			"name": "Bell pepper",
+			"price": 1.0
 		},
 		{
 			"type": "Veggie",
-			"name": "Mushrooms"
-			"price": 1.20
+			"name": "Mushrooms",
+			"price": 1.2
 		},
 		{
 			"type": "Veggie",
-			"name": "Pineapple"
+			"name": "Pineapple",
 			"price": 0.75
 		},
 		{
 			"type": "Non-Veggie",
-			"name": "Sausage"
-			"price": 1.00
+			"name": "Sausage",
+			"price": 1.0
 		},
 		{
 			"type": "Non-Veggie",
-			"name": "Pepperoni"
-			"price": 2.00
+			"name": "Pepperoni",
+			"price": 2.0
 		},
 		{
 			"type": "Non-Veggie",
-			"name": "Barbecue Chicken"
-			"price": 3.00
-		}		
-	]
+			"name": "Barbecue Chicken",
+			"price": 3.0
+		}
+	],
 	"offers": [
 		{
 			"description": "1 Medium Pizza with 2 topping",
