@@ -9,7 +9,7 @@ import { Pizza } from '../interfaces/pizza';
   styleUrl: './pizza-order.component.css',
 })
 export class PizzaOrderComponent {
-  private selectedPizza: Pizza | undefined;
+  public selectedPizza: Pizza | undefined;
   private selectedToppings: Topping[] = [];
   public orderTotal: number = 0;
 
