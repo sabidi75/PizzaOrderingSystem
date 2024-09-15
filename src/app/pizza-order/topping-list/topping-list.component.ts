@@ -18,7 +18,7 @@ export class ToppingListComponent {
   constructor(private apiService: ApiService) {}
 
   ngOnInit() {
-    this.breakpoint = window.innerWidth <= 400 ? 1 : 5;
+    this.breakpoint = window.innerWidth <= 400 ? 1 :  Math.floor(window.innerWidth / 300);
     this.selectedToppings = [];
     this.apiService.getNonVeggieToppings().subscribe((data) => {
       this.nonVeggieToppings = data;

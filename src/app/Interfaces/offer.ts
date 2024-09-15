@@ -1,7 +1,8 @@
 export interface Offer {
     description: string;
-    size: string;
-    toppings: 2;
+    pizza: number;
+    pizzaSize: string;
+    topping: number;
     price: number;
     discountType: string;
     discount: number;

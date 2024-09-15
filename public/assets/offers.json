@@ -1,23 +1,26 @@
 [
 	{
 		"description": "1 Medium Pizza with 2 topping",
-		"size": "Medium",
-		"toppings": 2,
+		"pizza": 1,
+		"pizzaSize": "Medium",
+		"topping": 2,
 		"price": 5,
-		"discountType": "amount",
+		"discountType": "fixed",
 		"discount": 0
 	},
 	{
 		"description": "2 Medium Pizza with 4 topping each",
-		"size": "Medium",
-		"toppings": 4,
+		"pizza": 2,
+		"pizzaSize": "Medium",
+		"topping": 4,
 		"price": 9,
-		"discountType": "amount",
+		"discountType": "fixed",
 		"discount": 0
 	},
 	{
 		"description": "1 Large Pizza with 4 topping(Pepperoni and Barbecue Chicken are counted as 2 toppings)",
-		"size": "Large",
+		"pizza": 1,
+		"pizzaSize": "Large",
 		"toppings": 4,
 		"price": 9,
 		"discountType": "percent",

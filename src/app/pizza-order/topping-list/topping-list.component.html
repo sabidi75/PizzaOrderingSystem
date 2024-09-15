@@ -1,37 +1,48 @@
-<mat-grid-list [cols]="breakpoint" class="mat-grid-list" (window:resize)="onResize($event)">
-  <label id="radio-group-label" class="label">Select your toppings</label>
-  <mat-grid-tile class="mat-grid-tile">
-    <label class="label">Veg</label>
-    <ul>
-      @for (topping of veggieToppings; track topping) {
-      <li>
-        <mat-checkbox
-          class="checkbox"
-          (change)="onToppingSelection($event.checked, topping)"
-          >{{ topping.name
-          }}<span class="topping-price"
-            >${{ topping.price | number: '1.1-2' }}</span
-          ></mat-checkbox
-        >
-      </li>
-      }
-    </ul>
-  </mat-grid-tile>
-  <mat-grid-tile class="mat-grid-tile">
-    <label class="label">Non Veg</label>
-    <ul>
-      @for (topping of nonVeggieToppings; track topping) {
-      <li>
-        <mat-checkbox
-          class="checkbox"
-          (change)="onToppingSelection($event.checked, topping)"
-          >{{ topping.name
-          }}<span class="topping-price"
-            >${{ topping.price | number: '1.1-2'}}</span
-          ></mat-checkbox
-        >
-      </li>
-      }
-    </ul>
-  </mat-grid-tile>
+<mat-grid-list
+  [cols]="breakpoint"
+  class="mat-grid-list"
+  (window:resize)="onResize($event)"
+>
+  <label id="radio-group-label" class="label"
+    >Select your toppings
+    <mat-grid-tile class="mat-grid-tile">
+      <label class="label"
+        >Veg
+        <ul>
+          @for (topping of veggieToppings; track topping) {
+          <li>
+            <mat-checkbox
+              class="checkbox"
+              (change)="onToppingSelection($event.checked, topping)"
+              >{{ topping.name
+              }}<span class="topping-price"
+                >${{ topping.price | number : "1.1-2" }}</span
+              ></mat-checkbox
+            >
+          </li>
+          }
+        </ul>
+      </label>
+    </mat-grid-tile>
+
+    <mat-grid-tile class="mat-grid-tile">
+      <label class="label"
+        >Non Veg
+        <ul>
+          @for (topping of nonVeggieToppings; track topping) {
+          <li>
+            <mat-checkbox
+              class="checkbox"
+              (change)="onToppingSelection($event.checked, topping)"
+              >{{ topping.name
+              }}<span class="topping-price"
+                >${{ topping.price | number : "1.1-2" }}</span
+              ></mat-checkbox
+            >
+          </li>
+          }
+        </ul>
+      </label>
+    </mat-grid-tile>
+  </label>
 </mat-grid-list>

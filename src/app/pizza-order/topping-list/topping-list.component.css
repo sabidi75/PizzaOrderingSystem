@@ -4,9 +4,8 @@
 
 .mat-grid-tile {
   position: absolute;
-  top: 0;
-  left: 0;
-  align-content: flex-start;
+  align-content: flex;
+  margin: 10px;
 }
 
 .label {

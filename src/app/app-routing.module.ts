@@ -7,6 +7,10 @@ const routes: Routes = [
         loadChildren: () => import('./pizza-order/pizza-order.module').then(m => m.PizzaOrderModule)
     },
     {
+        path: 'offer',
+        loadChildren: () => import('./pizza-offer/pizza-offer.module').then(m => m.PizzaOfferModule)
+    },    
+    {
         path: '',
         redirectTo: '',
         pathMatch: 'full'

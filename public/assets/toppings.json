@@ -2,41 +2,49 @@
 	{
 		"type": "Veggie",
 		"name": "Tomatoes",
-		"price": 1.0
+		"price": 1.0,
+		"toppingCountAs": 1
 	},
 	{
 		"type": "Veggie",
 		"name": "Onions",
-		"price": 0.5
+		"price": 0.5,
+		"toppingCountAs": 1
 	},
 	{
 		"type": "Veggie",
 		"name": "Bell pepper",
-		"price": 1.0
+		"price": 1.0,
+		"toppingCountAs": 1
 	},
 	{
 		"type": "Veggie",
 		"name": "Mushrooms",
-		"price": 1.2
+		"price": 1.2,
+		"toppingCountAs": 1
 	},
 	{
 		"type": "Veggie",
 		"name": "Pineapple",
-		"price": 0.75
+		"price": 0.75,
+		"toppingCountAs": 1
 	},
 	{
 		"type": "Non-Veggie",
 		"name": "Sausage",
-		"price": 1.0
+		"price": 1.0,
+		"toppingCountAs": 1
 	},
 	{
 		"type": "Non-Veggie",
 		"name": "Pepperoni",
-		"price": 2.0
+		"price": 2.0,
+		"toppingCountAs": 2
 	},
 	{
 		"type": "Non-Veggie",
 		"name": "Barbecue Chicken",
-		"price": 3.0
+		"price": 3.0,
+		"toppingCountAs": 2
 	}
 ]

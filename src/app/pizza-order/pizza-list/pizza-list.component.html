@@ -1,11 +1,22 @@
 <mat-grid-list cols="1" class="mat-grid-list">
-    <label id="radio-group-label" class="label">Select your pizza size</label>
+  <label id="radio-group-label" class="label"
+    >Select your pizza size
     <mat-radio-group
       aria-labelledby="radio-group-label"
       class="radio-group"
-      [(ngModel)]="selectedPizza">
+      [(ngModel)]="selectedPizza"
+    >
       @for (pizza of pizzas; track pizza) {
-        <mat-radio-button class="radio-button" (change)="onPizzaSelection(pizza)" [value]="pizza">{{pizza.size}}<span class="pizza-price">${{pizza.price | number: '1.1-2'}}</span></mat-radio-button>
+      <mat-radio-button
+        class="radio-button"
+        (change)="onPizzaSelection(pizza)"
+        [value]="pizza"
+        >{{ pizza.size
+        }}<span class="pizza-price"
+          >${{ pizza.price | number : "1.1-2" }}</span
+        ></mat-radio-button
+      >
       }
     </mat-radio-group>
+  </label>
 </mat-grid-list>

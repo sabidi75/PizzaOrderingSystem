@@ -7,26 +7,22 @@ import {MatRadioModule} from '@angular/material/radio';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatGridListModule} from '@angular/material/grid-list';
 
-import { PizzaListComponent } from './pizza-list/pizza-list.component';
-import { PizzaOrderRoutingModule } from './pizza-order-routing.module';
-import { PizzaOrderComponent } from './pizza-order.component';
-import { ToppingListComponent } from './topping-list/topping-list.component';
+import { PizzaOfferRoutingModule } from './pizza-offer-routing.module';
+import { PizzaOfferComponent } from './pizza-offer.component';
 
 @NgModule({
   declarations: [
-    PizzaListComponent,
-    PizzaOrderComponent,
-    ToppingListComponent
+    PizzaOfferComponent,
   ],
   imports: [
     CommonModule,
-    PizzaOrderRoutingModule,
+    PizzaOfferRoutingModule,
 
     MatButtonModule,
     MatRadioModule, 
     FormsModule,
     MatGridListModule,
-    MatCheckboxModule
+    MatCheckboxModule    
   ]
 })
-export class PizzaOrderModule { }
+export class PizzaOfferModule { }
