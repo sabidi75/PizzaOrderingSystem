@@ -32,4 +32,7 @@ export class PizzaOrderComponent {
       this.orderTotal += t.price;
     });
   }
+
+  onAddToCart() {
+  }
 }
