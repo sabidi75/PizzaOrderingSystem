@@ -2,5 +2,7 @@
     <app-pizza-list (updatePizzaSelected)="onPizzaSelected($event)"></app-pizza-list>
     <app-topping-list *ngIf="selectedPizza" (updateToppingsList)="onToppingSelected($event)"></app-topping-list>
     <span class="order-total-span"><label class="order-total-label">Total: ${{ orderTotal | number: '1.1-2' }}</label></span>
-    <button *ngIf="orderTotal" mat-raised-button (click)="onAddToCart()">Add to Cart</button>
+    @if (orderTotal) {
+        <button mat-raised-button (click)="onAddToCart()">Add to Cart</button>
+    }
 </mat-grid-list>
